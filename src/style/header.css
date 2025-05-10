@@ -1,0 +1,129 @@
+.navbar {
+  padding: 10px 20px;
+  border-style: solid;
+  border-width: 3px 0;
+  border-image: linear-gradient(to right, rgb(141, 5, 112), rgb(22, 22, 22), rgb(154, 6, 119));
+  border-image-slice: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar .left-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar .image-container {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar img {
+  max-width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: greenyellow;
+  color: black;
+  box-shadow: 0 0 10px greenyellow;
+}
+
+/* Toggle Button Base */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+    background-color: aqua;
+}
+
+/* Unified Mobile + Tablet (≤800px) */
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .navbar .left-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar h1 {
+    display: block;
+    font-size: 16px;
+  }
+
+  .navbar img {
+    max-width: 40px;
+    min-height: 40px;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 30px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .nav-links.show {
+    border:  solid greenyellow;
+    border-width: 0 0 0 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+@keyframes dropdownFade {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  animation: dropdownFade 0.5s ease-out;
+}
