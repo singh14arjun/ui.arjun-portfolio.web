@@ -176,9 +176,6 @@
 
 /* Tablets */
 @media (max-width: 1024px) {
-  * {
-    margin: 10px;
-  }
   .about {
     flex-wrap: wrap;
     gap: 40px;
