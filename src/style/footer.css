@@ -43,3 +43,20 @@
 .social-icons a:hover {
   color: magenta;
 }
+
+@keyframes dropIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.footer {
+  animation: dropIn 0.8s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}

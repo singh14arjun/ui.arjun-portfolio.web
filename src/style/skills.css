@@ -1,0 +1,21 @@
+.skills {
+  flex-wrap: wrap;
+}
+.skill-heading:hover {
+  color: magenta;
+}
+.skill-item {
+  width: 200px;
+  border: 2px solid;
+  padding: 10px 15px;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.skill-card {
+  color: white;
+  background-image: linear-gradient(to right, green, black);
+  padding: 14px;
+  border-radius: 10px;
+}

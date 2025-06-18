@@ -5,7 +5,7 @@ import sgvm from "../assets/photo/sgvm.jpg";
 
 const Education = () => {
   return (
-    <div className="p-6 min-h-screen">
+    <div className="p-6 min-h-screen" id="education">
       <h1 className="text-3xl font-bold mb-6 text-center">Education</h1>
 
       <div className="grid gap-6 max-w-3xl mx-auto">
