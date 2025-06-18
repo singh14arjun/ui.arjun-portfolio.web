@@ -3,7 +3,7 @@ import React from "react";
 const Experince = () => {
   return (
     <div id="experience">
-      <section class="mx-20 my-10">
+      <section className="mx-2.5 md:mx-20 my-10">
         <h2 class="text-3xl font-bold mb-6 text-center  ">Experience</h2>
         <div class="space-y-6">
           <div class="bg-gradient-to-r from-green-700 to-black p-6 rounded-lg shadow-md">
