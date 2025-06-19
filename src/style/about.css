@@ -4,10 +4,7 @@
   box-sizing: border-box;
 } */
 
-.about {
-  margin-bottom: 150px;
-}
-.about .about-me {
+/* .about .about-me {
   padding: 20px;
   text-align: start;
   text-transform: capitalize;
@@ -17,38 +14,15 @@
   width: 700px;
   max-height: fit-content;
   /* color: black; */
-  border-radius: 10px;
-}
+/* border-radius: 10px;
+} */
+*/
 
-.about .about-me .name {
+/* .about .about-me .name {
   color: #1c1fd2;
   font-weight: bold;
-}
+} */
 
-.about .typing-text {
-  font-size: 1.5rem;
-  color: #08b93d;
-  margin: 10px 0;
-  height: 40px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-/* Blinking cursor */
-.cursor {
-  display: inline-block;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
 
 /* Button Styling */
 .about .btn {
