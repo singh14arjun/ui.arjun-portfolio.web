@@ -1,5 +1,5 @@
-import React from 'react';
-import '../style/footer.css'; // create this CSS file
+import React from "react";
+import "../style/footer.css"; // create this CSS file
 
 const Footer = () => {
   return (
@@ -12,16 +12,37 @@ const Footer = () => {
         </div>
 
         <div className="bottom-section">
-          <p>&copy; {new Date().getFullYear()} Arjun Singh. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Arjun Singh. All rights reserved.
+          </p>
           <div className="social-icons">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
         </div>
