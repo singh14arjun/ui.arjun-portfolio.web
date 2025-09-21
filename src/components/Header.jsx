@@ -15,8 +15,8 @@ const Header = () => {
     <div
       className={`${
         scrolled ? "sticky top-0" : ""
-      } z-[1000] border-y-[3px] border-solid [border-image:linear-gradient(to_right,_rgb(3,153,3),_black,_rgb(3,153,3))_1] scroll-smooth
-         text-white px-[100px] py-3 items-center transition-all duration-300 ease-in-out font-serif`}
+      } z-[1000] border-y-[3px] border-solid  scroll-smooth
+         text-white px-[100px] py-10 items-center transition-all duration-300 ease-in-out font-serif`}
     >
       <div className="flex justify-between">
         <div className="flex items-center justify-between w-full flex-wrap md:flex-nowrap">
@@ -33,7 +33,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Nav Links */}
         <div>
           <ul
             className={`${
@@ -41,21 +40,20 @@ const Header = () => {
             } flex-col md:flex md:flex-row gap-5 mt-4 md:mt-0 md:gap-8 md:items-center text-sm font-semibold transition-all duration-500 ease-in-out`}
           >
             {[
-              { label: "Home", href: "#", icon: "fa-home" },
-              { label: "About", href: "#about", icon: "fa-user" },
+              { label: "Home", href: "#" },
+              { label: "About", href: "#about" },
               {
                 label: "Education",
                 href: "#education",
-                icon: "fa-graduation-cap",
               },
-              { label: "Skills", href: "#skills", icon: "fa-cogs" },
-              { label: "Projects", href: "#projects", icon: "fa-briefcase" },
-              { label: "Experience", href: "#experience", icon: "fa-history" },
+              { label: "Skills", href: "#skills" },
+              { label: "Projects", href: "#projects" },
+              { label: "Experience", href: "#experience" },
             ].map(({ label, href, icon }) => (
               <li key={label}>
                 <a
                   href={href}
-                  className="flex items-center gap-2 bg-green-700 text-white px-3 py-1 rounded hover:bg-[greenyellow] hover:text-black hover:shadow-[0_0_10px_greenyellow] transition"
+                  className="flex items-center gap-2  text-[#EEEEEE] px-3 py-1 text-xl"
                 >
                   <i className={`fas ${icon}`}></i> {label}
                 </a>
